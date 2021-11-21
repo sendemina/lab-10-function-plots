@@ -11,34 +11,45 @@
       var sales = [0, 50, 74, 31, 47, 25, 67, 78, 45, 15, 85, 43, 100];
       var myArray = [];
 
-      // for (let x = 0; x < 100; x++)
-      // {
+      for (let x = 0; x < 100; x++)
+      {
+        //
           // block scope
         // myArray.push(x);
         // myArray.push((1.33 * x) + 10); // y = mx + b
-        // myArray.push(Math.pow(x, 2));
-        // myArray.push(Math.pow(x, 0.5));
-        // myArray.push(Math.cos(x * 0.15 - 30));
-        // myArray.push(Math.sin(x * 0.75));
-        // myArray.push(x * -1 * Math.random());
-        // myArray.push(x * Math.random());
-      // }
 
-      for (i = 1; i <= 100; i++)
-      {
-        if (i % 3 == 0 && i % 5 ==0)
-        {
-          myArray.push(200);
-        }
-        else if (i % 3 == 0)
-        {
-          myArray.push(100);
-        }
-        else if (i % 5 == 0)
-        {
-          myArray.push(50);
-        }
+        myArray.push(Math.cos(x * 0.4 - 30));
+        myArray.push(Math.sin(x * 0.4));
+
+        // myArray.push(x * -1 * Math.random());
+
+        // myArray.push(Math.pow(x, 10));
+        // if (x <= 0.1)
+        // {
+        //   myArray.push(Math.pow(x, 0.1));
+        // }
+        // if (x < 1)
+        // {
+        //   myArray.push((2 * x) + 10);
+        // }
+
       }
+
+      // for (i = 1; i <= 100; i++)
+      // {
+      //   if (i % 3 == 0 && i % 5 ==0)
+      //   {
+      //     myArray.push(200);
+      //   }
+      //   else if (i % 3 == 0)
+      //   {
+      //     myArray.push(100);
+      //   }
+      //   else if (i % 5 == 0)
+      //   {
+      //     myArray.push(50);
+      //   }
+      // }
 
       // graph(sales);
       graph(myArray);
